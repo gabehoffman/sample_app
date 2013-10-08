@@ -3,16 +3,12 @@ ruby '2.0.0'
 
 gem 'rails', '4.0.0'
 gem 'bootstrap-sass', '2.3.2.0'
-
-group :development do
-  gem 'pg', '0.15.1'
-end
-
-group :test do
-  gem 'sqlite3'
-end
+gem 'bcrypt-ruby', '3.0.1'
+gem 'less-rails-bootstrap'
+gem 'therubyracer'
 
 group :development, :test do
+  gem 'pg', '0.15.1'
   gem 'rspec-rails', '2.13.1'
   gem 'guard-rspec', '2.5.0'
   gem 'spork-rails', '4.0.0'
